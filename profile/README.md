@@ -5,10 +5,10 @@
 Zellio Finance is a decentralized platform built on the Base network, designed for the tokenization, compliance enforcement, and permissioned trading of Real World Assets (RWAs). We leverage the ERC-3643 (T-REX) standard to bring regulatory compliance natively on-chain.
 
 ## 🔗 Quick Links
-- 🌐 **Website**: [zellio.finance](https://zellio.finance)
+- 🌐 **Website**: [zellio-rwa.pages.dev](https://zellio-rwa.pages.dev)
 - 🐦 **Twitter**: [@ZellioFinance](https://twitter.com/ZellioFinance)
 - 💬 **Discord**: [Join the Community](https://discord.gg/zellio)
-- 📖 **Documentation**: [docs.zellio.finance](https://docs.zellio.finance)
+- 📖 **Documentation**: [zellio-rwa.pages.dev](https://zellio-rwa.pages.dev/docs)
 
 ## 📂 Public Repositories
 
