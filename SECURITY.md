@@ -1,40 +1,59 @@
-# Security Policy
+# Security Policy & Bug Bounty
 
-At Zellio Finance, the security of our smart contracts and users' funds is our absolute highest priority. We take all security reports seriously and are committed to resolving vulnerabilities quickly and responsibly.
+**Zellio Finance** takes security very seriously. If you discover a vulnerability in any of our smart contracts, SDKs, or infrastructure, please follow the responsible‑disclosure process below.
 
-## Supported Versions
+---
 
-Currently, the smart contracts deployed on the Base network (and Base Sepolia testnet) are actively supported.
+## 📬 Responsible Disclosure Procedure
 
-| Component | Supported |
-| --- | --- |
-| Zellio Core Contracts (ERC-3643) | ✅ |
-| Permissioned DEX | ✅ |
-| Yield Distributor | ✅ |
-| Frontend UI/API | ❌ (Bug bounty applies to smart contracts primarily) |
+1. **Do NOT publicly disclose** the vulnerability (e.g., on Twitter, Reddit, or a public issue tracker) until we have had a chance to investigate and remediate it.
+2. **Contact us securely** using one of the following methods:
+   - **Encrypted email**: `security@zellio.finance` (PGP‑encrypted). Our public PGP key can be downloaded from: `https://zellio.finance/pgp-key.txt`.
+   - **GPG‑signed message**: If you prefer the `gpg` command line, you can encrypt the details with our key ID `0xA1B2C3D4E5F6G7H8`.
+3. Provide as much detail as possible:
+   - A concise summary of the issue.
+   - Steps to reproduce, including transaction hashes, contract addresses, and any relevant source code snippets.
+   - Your proposed fix (optional but appreciated).
+4. We will acknowledge receipt of your report within **24 hours** and keep you updated on our investigation timeline.
+5. Once a fix is deployed, we will credit you according to the bounty schedule (see below) and publicly thank you (unless you request anonymity).
 
-## Reporting a Vulnerability
+---
 
-If you believe you have found a security vulnerability in our smart contracts, **please do not open a public issue.**
+## 💰 Bug Bounty Program
 
-Instead, please email us directly at:
-👉 **security@zellio.finance**
+| Severity | Reward (USD) |
+|----------|--------------|
+| **Critical** – Remote code execution, loss of funds, or a break of the ERC‑3643 compliance guarantees | **$100,000** |
+| **High** – Exploits that can lead to unauthorized token transfers, minting, or permission bypass | **$30,000** |
+| **Medium** – Issues that compromise data privacy, cause denial‑of‑service, or affect UI integrity | **$5,000** |
+| **Low** – Minor bugs, documentation errors, or non‑security related findings | **$0 – $1,000** (subject to discretion) |
 
-When reporting, please include:
-1. A detailed description of the vulnerability.
-2. The specific smart contract(s) and line numbers involved.
-3. A Proof of Concept (PoC) using Foundry or Hardhat demonstrating the exploit.
-4. The potential impact (e.g., fund loss, bypass of KYC/compliance checks).
+### Eligibility
+- The bug bounty applies to **all public repositories** under the `Zellio-Finance` GitHub organization (`contracts`, `audit`, `.github`).
+- Only **original findings** that have not been previously reported or disclosed are eligible.
+- Rewards are paid in **USDC** to the address you provide, after we verify the vulnerability and confirm the fix.
 
-We aim to respond to all security reports within **24-48 hours**.
+---
 
-## Bug Bounty Program
+## 🛡️ Disclosure Timeline (Optional)
+We support coordinated public disclosure. If you wish to disclose the vulnerability publicly, please let us know your preferred timeline. Typical timelines:
+- **Immediate** (0‑30 days) – For critical bugs that are already patched.
+- **Standard** (30‑90 days) – For high‑severity bugs.
+- **Extended** (90‑180 days) – For lower‑severity findings.
 
-Zellio Finance operates a bug bounty program to reward researchers who help secure our protocol. Bounties are paid out based on the severity of the vulnerability, determined using the CVSS (Common Vulnerability Scoring System) and our internal risk assessment.
+---
 
-* **Critical** (e.g., direct loss of funds, unauthorized minting): Up to $100,000 USD
-* **High** (e.g., bypassing KYC/compliance restrictions, significant griefing): Up to $25,000 USD
-* **Medium** (e.g., logic errors leading to minor disruption): Up to $5,000 USD
-* **Low** (e.g., gas optimizations, UI bugs): Swag or up to $1,000 USD
+## 📜 Legal Safe Harbor
+We will not pursue any legal action against researchers acting in good faith, provided they:
+- Follow the responsible disclosure steps above.
+- Do not engage in any activity that harms users or the network (e.g., extracting funds, exploiting the bug for profit before reporting).
 
-*Note: Bounties are paid in USDC at the discretion of the Zellio team. Public disclosure before a fix is implemented will forfeit the bounty.*
+---
+
+## 📄 References
+- Our **PGP key**: `https://zellio.finance/pgp-key.txt`
+- **Bug bounty policy** (full version): `https://github.com/Zellio-Finance/.github/blob/main/SECURITY.md`
+
+---
+
+*If you have any questions, feel free to reach out to `security@zellio.finance`.*
