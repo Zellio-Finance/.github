@@ -6,7 +6,7 @@ Zellio Finance is a decentralized platform built on the Base network, designed f
 
 ## 🔗 Quick Links
 - 🌐 **Website**: [zellio-rwa.pages.dev](https://zellio-rwa.pages.dev)
-- 🐦 **Twitter**: [@ZellioFinance](https://twitter.com/ZellioFinance)
+- 🐦 **X**: [@ZellioFinance](https://x.com/ZellioFinance)
 - 💬 **Discord**: [Join the Community](https://discord.gg/zellio)
 - 📖 **Documentation**: [zellio-rwa.pages.dev](https://zellio-rwa.pages.dev/docs)
 
